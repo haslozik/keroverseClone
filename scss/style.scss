@@ -29,7 +29,7 @@ $fonts: (
     background: #000;
     color: #fff;
     text-align: center;
-    padding: 0 0 80px 0;
+    padding: 0 0 10px 0;
 
     &__title {
         font-size: 55px;
@@ -39,5 +39,46 @@ $fonts: (
         max-width: 1000px;
         margin: 30px auto;
         font-size: 22px;
+    }
+}
+
+.city {
+    width: 100%;
+    padding: 0 0 20px 0;
+    background: #000;
+
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.countdown {
+    background: #2e0969;
+}
+
+@media (max-width: 1024px) {
+    .text {
+        &__title {
+            font-size: 35px;
+        }
+    
+        &__content {
+            width: 90%;
+            margin: 30px auto;
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 505px) {
+    .text {
+        &__title {
+            font-size: 25px;
+        }
+    
+        &__content {
+            font-size: 14px;
+        }
     }
 }
