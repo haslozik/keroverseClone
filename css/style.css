@@ -44,7 +44,7 @@
 
 .text__content {
   max-width: 1000px;
-  margin: 30px auto;
+  margin: 30px auto 10px auto;
   font-size: 22px;
 }
 
@@ -61,6 +61,24 @@
 
 .countdown {
   background: #2e0969;
+  color: #fff;
+  font-family: "Inter";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.countdown__title {
+  margin: 50px;
+  letter-spacing: 7px;
+  font-size: 70px;
+  font-weight: 700;
 }
 
 @media (max-width: 1024px) {

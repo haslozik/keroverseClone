@@ -37,7 +37,7 @@ $fonts: (
 
     &__content {
         max-width: 1000px;
-        margin: 30px auto;
+        margin: 30px auto 10px auto;
         font-size: 22px;
     }
 }
@@ -55,6 +55,18 @@ $fonts: (
 
 .countdown {
     background: #2e0969;
+    color: #fff;
+    font-family: map-get($map: $fonts, $key: font-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        margin: 50px;
+        letter-spacing: 7px;
+        font-size: 70px;
+        font-weight: 700;
+    }
 }
 
 @media (max-width: 1024px) {
