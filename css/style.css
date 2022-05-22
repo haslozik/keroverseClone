@@ -72,6 +72,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .countdown__title {
@@ -79,6 +83,51 @@
   letter-spacing: 7px;
   font-size: 70px;
   font-weight: 700;
+}
+
+.countdown__container {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.countdown__container-clockElementContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.countdown__container-clockElementContainer__element {
+  background: #171717;
+  font-size: 60px;
+  padding: 40px 25px;
+  margin: 10px;
+  font-weight: 800;
+}
+
+.countdown__subtitle {
+  padding: 80px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 @media (max-width: 1024px) {

@@ -60,12 +60,43 @@ $fonts: (
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     &__title {
         margin: 50px;
         letter-spacing: 7px;
         font-size: 70px;
         font-weight: 700;
+    }
+
+    &__container {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+
+        &-clockElementContainer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            &__element {
+                background: #171717;
+                font-size: 60px;
+                padding: 40px 25px;
+                margin: 10px;
+                font-weight: 800;
+            }
+        }
+    }
+
+    &__subtitle {
+        padding: 80px;
+        letter-spacing: 2px;
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 
