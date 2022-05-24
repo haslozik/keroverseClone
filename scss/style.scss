@@ -59,19 +59,40 @@ $fonts: (
     align-items: center;
     flex-direction: column;
     background: #000;
-    padding: 70px 0;
+    padding: 70px 0 90px 0;
+
+    &__title {
+        color: #fff;
+        font-size: 65px;
+        font-family: map-get($map: $fonts, $key: font-1);
+        margin: 0 0 60px 0;
+    }
 
     &__container {
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
 
         img {
             height: 100%;
             width: auto;
+            margin: 15px;
         }
+    }
+}
+
+.ownership {
+    background: #000;
+
+    &__title {
+        text-align: center;
+        color: #fff;
+        font-size: 65px;
+        font-family: map-get($map: $fonts, $key: font-1);
+        margin: 0 0 60px 0;
     }
 }
 
