@@ -94,6 +94,18 @@ $fonts: (
         font-family: map-get($map: $fonts, $key: font-1);
         margin: 0 0 60px 0;
     }
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+
+        &--element {
+            width: 50%;
+            
+        }
+    }
 }
 
 @media (max-width: 1036px) {

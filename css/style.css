@@ -118,6 +118,19 @@
   margin: 0 0 60px 0;
 }
 
+.ownership__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+.ownership__container--element {
+  width: 50%;
+}
+
 @media (max-width: 1036px) {
   .text__title {
     font-size: 35px;
