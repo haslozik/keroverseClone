@@ -86,12 +86,12 @@ $fonts: (
 
 .ownership {
     background: #000;
+    color: #fff;
+    font-family: map-get($map: $fonts, $key: font-1);
 
     &__title {
         text-align: center;
-        color: #fff;
         font-size: 65px;
-        font-family: map-get($map: $fonts, $key: font-1);
         margin: 0 0 60px 0;
     }
 
@@ -102,8 +102,22 @@ $fonts: (
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 
         &--element {
-            width: 50%;
-            
+            display: flex;
+
+            img {
+                height: 129px;
+                width: 129px;
+            }
+
+            &__text {
+                margin: 40px;
+
+                span {
+                    font-size: 32px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                }
+            }
         }
     }
 }

@@ -108,13 +108,13 @@
 
 .ownership {
   background: #000;
+  color: #fff;
+  font-family: "Inter";
 }
 
 .ownership__title {
   text-align: center;
-  color: #fff;
   font-size: 65px;
-  font-family: "Inter";
   margin: 0 0 60px 0;
 }
 
@@ -128,7 +128,24 @@
 }
 
 .ownership__container--element {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ownership__container--element img {
+  height: 129px;
+  width: 129px;
+}
+
+.ownership__container--element__text {
+  margin: 40px;
+}
+
+.ownership__container--element__text span {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
 @media (max-width: 1036px) {
