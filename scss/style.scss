@@ -136,6 +136,30 @@ $fonts: (
     }
 }
 
+@media (max-width: 886px) {
+    .ownership {
+        &__title {
+            font-size: 35px;
+            margin: 0 0 60px 0;
+        }
+    
+        &__container {
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        
+            &--element {
+                &__text {
+                    font-size: 16px;
+                    span {
+                        font-size: 22px;
+                        font-weight: 700;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 505px) {
     .text {
         &__title {
@@ -144,6 +168,21 @@ $fonts: (
     
         &__content {
             font-size: 14px;
+        }
+    }
+
+    .ownership {
+        &__container {
+            &--element {
+                img {
+                    height: 89px;
+                    width: 89px;
+                }
+
+                &__text {
+                    margin: 25px 15px;
+                }
+            }
         }
     }
 }
