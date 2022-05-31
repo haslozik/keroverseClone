@@ -161,14 +161,23 @@
   position: relative;
 }
 
-.features__title::after {
-  background: #fff;
-  height: 2px;
-  width: 150px;
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.features__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.features__container--element {
+  text-align: center;
+  background: #04050c;
+}
+
+.features__container--element img {
+  height: 100px;
 }
 
 @media (max-width: 1036px) {

@@ -132,15 +132,22 @@ $fonts: (
         font-size: 65px;
         padding: 90px 0 60px 0;
         position: relative;
+    }
 
-        &::after {
-            background: #fff;
-            height: 2px;
-            width: 150px;
-            display: block;
-            position: absolute;
-            top: 10px;
-            left: 10px;
+    &__container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+
+        &--element {
+            text-align: center;
+            background: #04050c;
+
+            img {
+                height: 100px;
+            }
         }
     }
 }
