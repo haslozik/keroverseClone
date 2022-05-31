@@ -63,7 +63,7 @@ $fonts: (
 
     &__title {
         color: #fff;
-        font-size: 65px;
+        font-size: 55px;
         font-family: map-get($map: $fonts, $key: font-1);
         margin: 0 0 60px 0;
     }
@@ -91,7 +91,7 @@ $fonts: (
 
     &__title {
         text-align: center;
-        font-size: 65px;
+        font-size: 55px;
         margin: 0 0 60px 0;
     }
 
@@ -130,9 +130,8 @@ $fonts: (
 
     &__title {
         text-align: center;
-        font-size: 65px;
+        font-size: 55px;
         padding: 90px 0 60px 0;
-        position: relative;
     }
 
     &__container {
@@ -171,6 +170,74 @@ $fonts: (
     }
 }
 
+.roadmap {
+    background: #2e0969;
+    color: #fff;
+    font-family: map-get($map: $fonts, $key: font-1);
+
+    &__title{
+        text-align: center;
+        font-size: 55px;
+        padding: 70px 0 60px 0;
+        letter-spacing: 1px;
+    }
+
+    &__timeline {
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        padding: 20px 0;
+        transition: .5s;
+        background: #2e0969;
+        
+        > ul {
+            > li, .list--element {
+                list-style: none;
+                line-height: 25px;
+                position: relative;
+                padding: 15px 50px;
+                height: 175px;
+
+                    &:nth-child(odd) {
+                        width: 70%;
+                        float: right;
+                        text-align: left;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            width: 3px;
+                            height: 100%;
+                            background: #fff;
+                            z-index: 3;
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        width: 30%;
+                        float: left;
+                        text-align: right;
+                        font-size: 30px;
+                    }
+
+                &__title {
+                    width: fit-content;
+                    padding: 5px 20px;
+                    border-radius: 4px;
+                    background: radial-gradient(circle, rgb(170, 166, 109) 0%, rgb(131, 111, 0) 100%);
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                &__content {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1036px) {
     .text {
         &__title {
@@ -183,15 +250,36 @@ $fonts: (
             font-size: 17px;
         }
     }
-}
 
-@media (max-width: 886px) {
+    .gallery {
+        &__title {
+            font-size: 35px;
+        }
+    }
+
     .ownership {
         &__title {
             font-size: 35px;
             margin: 0 0 60px 0;
         }
+    }
     
+    .features {
+        &__title {
+            font-size: 35px;
+        }
+    }
+
+    .roadmap {
+        &__title {
+            font-size: 35px;
+        }
+    }
+
+}
+
+@media (max-width: 886px) {
+    .ownership {
         &__container {
             grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
         
@@ -221,6 +309,10 @@ $fonts: (
     }
 
     .ownership {
+        &__title {
+            font-size: 25px;
+        }
+
         &__container {
             &--element {
                 img {
@@ -237,7 +329,7 @@ $fonts: (
 
     .features {
         &__title {
-            font-size: 45px;
+            font-size: 25px;
             padding: 90px 0 60px 0;
         }
 
@@ -253,6 +345,12 @@ $fonts: (
                     font-size: 16px;
                 }
             }
+        }
+    }
+
+    .roadmap {
+        &__title {
+            font-size: 25px;
         }
     }
 }
