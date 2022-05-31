@@ -298,6 +298,7 @@
   color: #000;
   font-family: "Inter";
   text-align: center;
+  padding-bottom: 90px;
 }
 
 .team__title {
@@ -305,6 +306,73 @@
   font-size: 55px;
   padding: 70px 0 60px 0;
   letter-spacing: 1px;
+}
+
+.team__container {
+  width: 80%;
+  max-width: 1260px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.team__container--element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team__container--element .element {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.team__container--element-first {
+  background: url("../img/team/portrait1.png");
+}
+
+.team__container--element-second {
+  background: url("../img/team/portrait2.png");
+}
+
+.team__container--element-third {
+  background: url("../img/team/portrait3.png");
+}
+
+.team__container--element-fourth {
+  background: url("../img/team/portrait4.png");
+}
+
+.team__container--element__desc {
+  background: #171717;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  border-radius: 0 0 9px 9px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.team__container--element__desc span {
+  font-weight: 300;
+  font-size: 14px;
 }
 
 /*  rwd  */

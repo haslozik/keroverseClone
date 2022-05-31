@@ -260,12 +260,66 @@ $fonts: (
     color: #000;
     font-family: map-get($map: $fonts, $key: font-1);
     text-align: center;
+    padding-bottom: 90px;
 
     &__title{
         text-align: center;
         font-size: 55px;
         padding: 70px 0 60px 0;
         letter-spacing: 1px;
+    }
+
+    &__container {
+        width: 80%;
+        max-width: 1260px;
+        margin: 0 auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    
+        &--element {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+                .element {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 300px;
+                    width: 100%;
+                }
+
+                &-first {
+                    background: url('../img/team/portrait1.png');
+                }
+                &-second {
+                    background: url('../img/team/portrait2.png');
+                }
+                &-third {
+                    background: url('../img/team/portrait3.png');
+                }
+                &-fourth {
+                    background: url('../img/team/portrait4.png');
+                }
+            
+            &__desc {
+                background: #171717;
+                width: 100%;
+                color: #fff;
+                text-align: left;
+                padding: 20px;
+                border-radius: 0 0 9px 9px;
+                font-size: 20px;
+                font-weight: 600;
+
+                span {
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 
