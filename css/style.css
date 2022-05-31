@@ -211,6 +211,7 @@
   background: #2e0969;
   color: #fff;
   font-family: "Inter";
+  text-align: center;
 }
 
 .roadmap__title {
@@ -254,6 +255,18 @@
   z-index: 3;
 }
 
+.roadmap__timeline > ul > li:nth-child(odd)::after, .roadmap__timeline > ul .list--element:nth-child(odd)::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 3;
+}
+
 .roadmap__timeline > ul > li:nth-child(even), .roadmap__timeline > ul .list--element:nth-child(even) {
   width: 30%;
   float: left;
@@ -274,6 +287,10 @@
 
 .roadmap__timeline > ul > li__content, .roadmap__timeline > ul .list--element__content {
   padding: 20px 0;
+}
+
+.roadmap i {
+  padding: 60px 0;
 }
 
 @media (max-width: 1036px) {
