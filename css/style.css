@@ -252,5 +252,17 @@
   .ownership__container--element__text {
     margin: 25px 15px;
   }
+  .features__title {
+    font-size: 45px;
+    padding: 90px 0 60px 0;
+  }
+  .features__container--element__title {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+  .features__container--element__content {
+    padding: 10px 10px;
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
