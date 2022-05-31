@@ -152,6 +152,7 @@
   background: #000;
   color: #fff;
   font-family: "Inter";
+  padding-bottom: 70px;
 }
 
 .features__title {
@@ -173,11 +174,38 @@
 
 .features__container--element {
   text-align: center;
-  background: #04050c;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .features__container--element img {
   height: 100px;
+}
+
+.features__container--element__title {
+  padding: 10px 15px;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.features__container--element__content {
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 1036px) {

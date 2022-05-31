@@ -126,6 +126,7 @@ $fonts: (
     background: #000;
     color: #fff;
     font-family: map-get($map: $fonts, $key: font-1);
+    padding-bottom: 70px;
 
     &__title {
         text-align: center;
@@ -143,10 +144,28 @@ $fonts: (
 
         &--element {
             text-align: center;
-            background: #04050c;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
             img {
                 height: 100px;
+            }
+
+            &__title {
+                padding: 10px 15px;
+                font-weight: 700;
+                font-size: 22px;
+                letter-spacing: 1px;
+            }
+
+            &__content {
+                padding: 10px 20px;
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 1px;
             }
         }
     }
