@@ -39,7 +39,7 @@
 }
 
 .text__title {
-  font-size: 55px;
+  font-size: 65px;
 }
 
 .text__content {
@@ -79,7 +79,7 @@
 
 .gallery__title {
   color: #fff;
-  font-size: 55px;
+  font-size: 65px;
   font-family: "Inter";
   margin: 0 0 60px 0;
 }
@@ -114,7 +114,7 @@
 
 .ownership__title {
   text-align: center;
-  font-size: 55px;
+  font-size: 65px;
   margin: 0 0 60px 0;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .features {
-  background: #000;
+  background: #050505;
   color: #fff;
   font-family: "Inter";
   padding-bottom: 70px;
@@ -157,7 +157,7 @@
 
 .features__title {
   text-align: center;
-  font-size: 55px;
+  font-size: 65px;
   padding: 90px 0 60px 0;
 }
 
@@ -216,7 +216,7 @@
 
 .roadmap__title {
   text-align: center;
-  font-size: 55px;
+  font-size: 65px;
   padding: 70px 0 60px 0;
   letter-spacing: 1px;
 }
@@ -298,12 +298,12 @@
   color: #000;
   font-family: "Inter";
   text-align: center;
-  padding-bottom: 90px;
+  padding-bottom: 100px;
 }
 
 .team__title {
   text-align: center;
-  font-size: 55px;
+  font-size: 65px;
   padding: 70px 0 60px 0;
   letter-spacing: 1px;
 }
@@ -341,6 +341,55 @@
   background-size: cover;
   height: 300px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__container--element .element__socialmedia {
+  width: 70%;
+  margin: 15px auto;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.team__container--element .element__socialmedia i {
+  height: 30px;
+  width: 30px;
+  background: #444;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.team__container--element .element__socialmedia i:hover {
+  background: #cc00c2;
 }
 
 .team__container--element-first {
@@ -375,6 +424,20 @@
   font-size: 14px;
 }
 
+.faq {
+  background: #2e0969;
+  color: #fff;
+  font-family: "Inter";
+  text-align: center;
+}
+
+.faq__title {
+  text-align: center;
+  font-size: 65px;
+  padding: 70px 0 60px 0;
+  letter-spacing: 1px;
+}
+
 /*  rwd  */
 @media (max-width: 1036px) {
   .text__title {
@@ -397,6 +460,15 @@
   }
   .roadmap__title {
     font-size: 35px;
+  }
+  .roadmap__timeline {
+    width: 100% !important;
+    position: relative;
+    padding: 20px 0;
+    background: #2e0969;
+  }
+  .roadmap__timeline > ul > li, .roadmap__timeline > ul .list--element {
+    height: 100%;
   }
   .team__title {
     font-size: 35px;
