@@ -548,6 +548,9 @@
   .team__title {
     font-size: 35px;
   }
+  .faqContainer__title {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 886px) {
@@ -599,6 +602,20 @@
   }
   .team__title {
     font-size: 25px;
+  }
+  .faqContainer__title {
+    font-size: 25px;
+  }
+  .faqContainer__subtitle {
+    font-size: 14px;
+  }
+  .faq__question {
+    font-size: 18px;
+  }
+  .faq__question--plus {
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

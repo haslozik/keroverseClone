@@ -483,6 +483,12 @@ $fonts: (
             font-size: 35px;
         }
     }
+
+    .faqContainer {
+        &__title {
+            font-size: 35px;
+        }
+    }
 }
 
 @media (max-width: 886px) {
@@ -564,6 +570,28 @@ $fonts: (
     .team {
         &__title {
             font-size: 25px;
+        }
+    }
+
+    .faqContainer {
+        &__title {
+            font-size: 25px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+
+    .faq {
+        &__question {
+            font-size: 18px;
+
+            &--plus {
+                height: 20px;
+                width: 20px;
+                font-size: 12px;
+            }
         }
     }
 }
