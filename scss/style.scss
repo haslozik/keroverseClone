@@ -426,6 +426,65 @@ $fonts: (
     color: #fff;
 }
 
+.footer {
+    background: #000;
+    font-family: map-get($map: $fonts, $key: font-1);
+    text-align: center;
+    color: #fff;
+    padding-bottom: 25px;
+
+    &__title{
+        font-size: 65px;
+        padding: 70px 0 20px 0;
+        letter-spacing: 1px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__text {
+        margin-top: 25px;
+    }
+
+    &__socialmedia {
+        max-width: 400px;
+        margin: 25px auto 60px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            background: #444;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background: rgb(204, 0, 194);
+            }
+        }
+    }
+
+    &__line {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid #222;
+    }
+
+    &__copyright {
+        color: #ddd;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+}
+
 /*  rwd  */
 @media (max-width: 1036px) {
     .text {
@@ -437,25 +496,6 @@ $fonts: (
             width: 90%;
             margin: 30px auto;
             font-size: 17px;
-        }
-    }
-
-    .gallery {
-        &__title {
-            font-size: 35px;
-        }
-    }
-
-    .ownership {
-        &__title {
-            font-size: 35px;
-            margin: 0 0 60px 0;
-        }
-    }
-    
-    .features {
-        &__title {
-            font-size: 35px;
         }
     }
 
@@ -478,13 +518,12 @@ $fonts: (
         }
     }
 
-    .team {
-        &__title {
-            font-size: 35px;
-        }
-    }
-
-    .faqContainer {
+    .gallery, 
+    .ownership, 
+    .features, 
+    .team, 
+    .faqContainer, 
+    .footer {
         &__title {
             font-size: 35px;
         }
@@ -561,13 +600,7 @@ $fonts: (
         }
     }
 
-    .roadmap {
-        &__title {
-            font-size: 25px;
-        }
-    }
-
-    .team {
+    .roadmap, .team {
         &__title {
             font-size: 25px;
         }
